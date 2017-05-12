@@ -1,8 +1,9 @@
 package lesson;
 
 import javax.swing.*;  // Среда подтянула библиотеку
+import java.awt.*;
 
- class GameWindow extends JFrame {  // Унаследывали JFrame
+class GameWindow extends JFrame {  // Унаследывали JFrame
    private static final int WINDOW_WIDTH =507; //  Высота окна
    private static final int WINDOW_HEIGHT =557; // Ширина окна
    private static final int WINDOW_POS_X =507;
@@ -12,6 +13,20 @@ import javax.swing.*;  // Среда подтянула библиотеку
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);  //  Действие при  нажатий на крестик
         setSize(WINDOW_WIDTH,WINDOW_HEIGHT); // Размеры окна
         setLocation(WINDOW_POS_X,WINDOW_POS_Y); // Положение Окна
+        setTitle("TicTacToe"); //Титилы
+       setResizable(false); //Запрет полного Экрана
+       JButton btnGameNew=new JButton("New Game"); //Венгерская Нотация
+       JButton btnGameExit=new JButton("Exit Game"); //
+       add(btnGameNew);
+       add(btnGameExit, BorderLayout.SOUTH);//  что произойдет ?
+
+
+
+
+
+
+
+
         setVisible(true); // Вы помните
    }
 }
