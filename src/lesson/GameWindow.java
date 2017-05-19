@@ -40,4 +40,7 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
 
         setVisible(true); // Вы помните
    }
+   void setStertNewGemrWindow (int mode,int sizeFieldX,int sizeFieldY,int winLength){
+      map.startNewGame(mode,sizeFieldX,sizeFieldY,winLength);
+   }
 }
