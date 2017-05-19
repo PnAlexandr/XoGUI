@@ -8,6 +8,11 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
    private static final int WINDOW_HEIGHT =557; // Ширина окна
    private static final int WINDOW_POS_X =507;
    private static final int WINDOW_POS_Y =507;
+
+   private  StartNewGameWindow stertNewGemrWindow;
+   private  Map map;
+
+
    // Константы БОЛЬШИМИ БУКВАМИ
    GameWindow(){                    // Обевили констркутор пустой
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);  //  Действие при  нажатий на крестик
@@ -17,6 +22,7 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
        setResizable(false); //Запрет полного Экрана
        JButton btnGameNew=new JButton("New Game"); //Венгерская Нотация
        JButton btnGameExit=new JButton("Exit Game"); //
+       setLayout(null);
        add(btnGameNew);
        add(btnGameExit, BorderLayout.SOUTH);//  что произойдет ?
 
@@ -26,6 +32,9 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
 
 
 
+
+
+        stertNewGemrWindow =new StartNewGameWindow();
 
         setVisible(true); // Вы помните
    }
