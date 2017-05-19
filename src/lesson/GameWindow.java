@@ -22,11 +22,15 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
        setResizable(false); //Запрет полного Экрана
        JButton btnGameNew=new JButton("New Game"); //Венгерская Нотация
        JButton btnGameExit=new JButton("Exit Game"); //
-       
+
+       map = new Map();
+
        JPanel panelBottom =new JPanel(); //  Конструктор  JPanel
        panelBottom.setLayout(new GridLayout(1, 2));//  Создаем панель из 1 строкии 2 кнопок
        panelBottom.add(btnGameNew);
        panelBottom.add(btnGameExit);// Кнопки
+       add(map,BorderLayout.CENTER);
+       add(panelBottom,BorderLayout.SOUTH);
 
 
 
