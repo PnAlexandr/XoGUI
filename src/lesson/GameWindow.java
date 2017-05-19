@@ -36,14 +36,6 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
 
 
 
-
-
-
-
-
-
-
-
         stertNewGemrWindow =new StartNewGameWindow(this); // Сложно
 
         setVisible(true); // Вы помните
