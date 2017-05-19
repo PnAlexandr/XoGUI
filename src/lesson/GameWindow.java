@@ -2,6 +2,8 @@ package lesson;
 
 import javax.swing.*;  // Среда подтянула библиотеку
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 class GameWindow extends JFrame {  // Унаследывали JFrame
    private static final int WINDOW_WIDTH =507; //  Высота окна
@@ -21,7 +23,19 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
         setTitle("TicTacToe"); //Титилы
        setResizable(false); //Запрет полного Экрана
        JButton btnGameNew=new JButton("New Game"); //Венгерская Нотация
+       btnGameNew.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+             stertNewGemrWindow
+           }
+       });
        JButton btnGameExit=new JButton("Exit Game"); //
+       btnGameExit.addActionListener(new ActionListener() {// Закрытие програмы
+           @Override
+           public void actionPerformed(ActionEvent e) {
+               System.exit(0);
+           }
+       });
 
        map = new Map();
 
