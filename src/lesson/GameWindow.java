@@ -24,7 +24,8 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
        JButton btnGameExit=new JButton("Exit Game"); //
        setLayout(null);
        add(btnGameNew);
-       add(btnGameExit, BorderLayout.SOUTH);//  что произойдет ?
+       add(btnGameExit);//  что произойдет ?
+       
 
 
 
@@ -34,7 +35,7 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
 
 
 
-        stertNewGemrWindow =new StartNewGameWindow();
+        stertNewGemrWindow =new StartNewGameWindow(this); // Сложно
 
         setVisible(true); // Вы помните
    }
