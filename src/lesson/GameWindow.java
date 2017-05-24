@@ -26,7 +26,7 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
        btnGameNew.addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent e) {
-             stertNewGemrWindow
+             stertNewGemrWindow.setVisible(true);//StartNewGameWindow пуск
            }
        });
        JButton btnGameExit=new JButton("Exit Game"); //
@@ -54,7 +54,7 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
 
         setVisible(true); // Вы помните
    }
-   void setStertNewGemrWindow (int mode,int sizeFieldX,int sizeFieldY,int winLength){
+   void setStartNewGameWindow (int mode,int sizeFieldX,int sizeFieldY,int winLength){
       map.startNewGame(mode,sizeFieldX,sizeFieldY,winLength);
    }
 }
