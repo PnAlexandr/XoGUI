@@ -9,7 +9,7 @@ class GameWindow extends JFrame {  // Унаследывали JFrame
    private static final int WINDOW_WIDTH =507; //  Высота окна
    private static final int WINDOW_HEIGHT =557; // Ширина окна
    private static final int WINDOW_POS_X =507;
-   private static final int WINDOW_POS_Y =507;
+   private static final int WINDOW_POS_Y =207;
 
    private  StartNewGameWindow stertNewGemrWindow;
    private  Map map;
