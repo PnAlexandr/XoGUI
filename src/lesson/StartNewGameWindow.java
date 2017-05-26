@@ -31,6 +31,7 @@ class StartNewGameWindow extends JFrame {
          setTitle("Создание игры");
          setLayout(new GridLayout(10,1));
          addGameControlsMode();
+         addGameControlField();
 
      }
      void  addGameControlsMode(){
@@ -58,9 +59,23 @@ class StartNewGameWindow extends JFrame {
          sliderWinLength.addChangeListener(new ChangeListener() {
              @Override
              public void stateChanged(ChangeEvent e) {
+                 lbWinLength.setText(WIN_LEN_PREFIX+sliderWinLength.getValue());//показания сладера
 
              }
          });
-         sliderFiledSize = new JSlider()
+         add(sliderWinLength);
+         final String FILED_SIZE_PREFIX="Winning length is";
+         JLabel lbFieldSize =new JLabel(FILED_SIZE_PREFIX+MIN_WIN_LENGTH);// Значения выигрыша
+         add(lbWinLength);
+         sliderFiledSize = new JSlider(MIN_FIELD_SIZE,MAX_FIELD_SIZE,MIN_FIELD_SIZE);
+         sliderFiledSize.addChangeListener(new ChangeListener() {
+             @Override
+             public void stateChanged(ChangeEvent e) {
+                 int currentVale=sliderFiledSize.getValue();
+                 lbFieldSize.setText(FILED_SIZE_PREFIX+currentVale);
+                 sliderWinLength.setMaximum(currentVale);
+             }
+         });
+         add(sliderFiledSize);
      }
 }
