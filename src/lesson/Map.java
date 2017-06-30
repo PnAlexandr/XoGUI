@@ -58,7 +58,11 @@ public class Map extends JPanel {
         for (int i = 0; i <=fieldSizeY ; i++) {
             int y = i*celHeig;
             g.drawLine(0,y,panelWidth,y);
-            
+        }
+        for (int i = 0; i <=fieldSizeX ; i++) {
+            int x = i*cellWidth;
+            g.drawLine(x,0,x,panelHeight);//Полянка нарисована 
+
         }
         
        // System.out.println("Ширина"+panelWidth+"Длина"+panelHeight);

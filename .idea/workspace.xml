@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de0afe4-37e1-4a34-8d97-cc33ec594237" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/GameWindow.java" afterPath="$PROJECT_DIR$/src/lesson/GameWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/Map.java" afterPath="$PROJECT_DIR$/src/lesson/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/StartNewGameWindow.java" afterPath="$PROJECT_DIR$/src/lesson/StartNewGameWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/XoGUI.java" afterPath="$PROJECT_DIR$/src/lesson/XoGUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +44,8 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="306">
+              <caret line="63" column="63" lean-forward="false" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#491#492#0" expanded="true" />
@@ -484,7 +480,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="65" width="1616" height="876" extended-state="1" />
+    <frame x="39" y="65" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -751,8 +747,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="306">
+          <caret line="63" column="63" lean-forward="false" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#491#492#0" expanded="true" />
